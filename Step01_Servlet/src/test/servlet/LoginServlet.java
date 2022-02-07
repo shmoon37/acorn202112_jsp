@@ -9,22 +9,17 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet("/send")
-public class SendServlet extends HttpServlet {
+@WebServlet("/users/login")
+public class LoginServlet extends HttpServlet {
 	@Override
 	protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		/*
-		 * <input type="text" name="msg" placeholder="서버에 할 말 입력..."/>
-		 * 		 * 위의 input 요소에 입력한
-		 * msg라는 이름으로 전송된 문자열 추가하기
-		 */
-		
-		//post방식 전송했을 때 한글 깨지지 않도록
+
 		req.setCharacterEncoding("utf-8");
 		
-		String a=req.getParameter("msg");
-		System.out.println(a);
-		 
+		String a=req.getParameter("id");
+		String b=req.getParameter("pwd");
+
+		
 		//응답 인코딩 설정
 		resp.setCharacterEncoding("utf-8");
 		//응답 컨텐츠 type 설정(웹브라우저에게 html 형식의 문자열을 응답할 
@@ -35,10 +30,10 @@ public class SendServlet extends HttpServlet {
 		pw.println("<html>");
 		pw.println("<head>");
 		pw.println("<meta charset='utf-8'>");
-		pw.println("<title></title>");
+		pw.println("<title>로그인 결과 페이지</title>");
 		pw.println("</head>");
 		pw.println("<body>");
-		pw.println("okay~");
+		pw.println("<p>로그인 되었습니다.</p>");
 		pw.println("</body>");
 		pw.println("</html>");
 		pw.close();
