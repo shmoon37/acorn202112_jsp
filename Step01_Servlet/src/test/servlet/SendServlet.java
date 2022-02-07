@@ -19,12 +19,12 @@ public class SendServlet extends HttpServlet {
 		 * msg라는 이름으로 전송된 문자열 추가하기
 		 */
 		
-		//post방식 전송했을 때 한글 깨지지 않도록
+		//post 방식 전송했을때 한글 깨지지 않도록 
 		req.setCharacterEncoding("utf-8");
 		
-		String a=req.getParameter("msg");
+		String a = req.getParameter("msg");
 		System.out.println(a);
-		 
+
 		//응답 인코딩 설정
 		resp.setCharacterEncoding("utf-8");
 		//응답 컨텐츠 type 설정(웹브라우저에게 html 형식의 문자열을 응답할 
