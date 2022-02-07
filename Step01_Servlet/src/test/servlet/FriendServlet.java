@@ -33,7 +33,7 @@ public class FriendServlet extends HttpServlet{
 		pw.println("<!doctype html>");
 		pw.println("<html>");
 		pw.println("<head>");
-		pw.println("<meta =charset='utf-8'>");
+		pw.println("<meta charset='utf-8'>");
 		pw.println("<title>친구 이름 목록 페이지</title>");
 		pw.println("</head>");
 		pw.println("<body>");
