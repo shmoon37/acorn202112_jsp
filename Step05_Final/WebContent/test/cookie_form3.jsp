@@ -30,7 +30,11 @@
 <title>/test/cookie_form3.jsp</title>
 </head>
 <body>
+<<<<<<< HEAD
 <form action="login.jsp" method="post">
+=======
+<form action="login.jsp" method="post" >
+>>>>>>> branch 'master' of https://github.com/oli999/acorn202112_jsp.git
 	<table>
 		<tr>
 			<th><label for="id">아이디</label></th>

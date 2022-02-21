@@ -77,7 +77,16 @@
 		showPopup2();	
 	<%}%>
 	
+<<<<<<< HEAD
 </script>
+=======
+	//팝업된 창에서 호출할 함수 
+	function sendMsg(msg){
+		document.querySelector("#result").innerText=msg;
+	}
+</script>
+<p id="result"></p>
+>>>>>>> branch 'master' of https://github.com/oli999/acorn202112_jsp.git
 </body>
 </html>
 
