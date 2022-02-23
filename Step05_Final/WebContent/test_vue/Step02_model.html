@@ -10,6 +10,7 @@
     <h1>v-model 사용하기</h1>
     <div id="app">
         <!-- input 요소의 value 를 msg 라는 모델명으로 사용하겠다 -->
+<<<<<<< HEAD
         <input type="text" v-model="msg" >
         <p>{{msg}}</p>
         <!-- p 요소의 innerText 에 msg 라는 모델 안에 들어 있는 값을 넣기 -->
@@ -24,6 +25,22 @@
             },
             methods:{
               
+=======
+        <input type="text" v-model="msg" > 
+        <p>{{msg}}</p>
+        <!-- p 요소의 innerText 에 msg 라는 모델 안에 들어 있는 값을 넣기 -->
+        <p v-text="msg"></p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+        let app=new Vue({
+            el:"#app",
+            data:{
+              msg:""
+            },
+            methods:{
+              	
+>>>>>>> branch 'master' of https://github.com/oli999/acorn202112_jsp.git
             }
         });
     </script>    

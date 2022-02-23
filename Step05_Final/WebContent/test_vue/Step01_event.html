@@ -15,6 +15,7 @@
         <button v-on:click="clicked">눌러보셈</button> 
         <p>{{msg}}</p>
     </div>
+<<<<<<< HEAD
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script>
         let app=new Vue({
@@ -33,3 +34,26 @@
     </script>
 </body>
 </html>
+=======
+    
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+        let app=new Vue({
+            el:"#app",
+            data:{
+                msg:""
+            },
+            methods:{
+                clicked:function(){
+                    console.log("버튼을 눌렀네요?");
+                    //data object 안에있는 msg 참조 
+                    this.msg="버튼을 눌렀네요?";
+                }
+            }
+        });
+    </script>
+</body>
+</html>
+
+
+>>>>>>> branch 'master' of https://github.com/oli999/acorn202112_jsp.git
